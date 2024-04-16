@@ -1,0 +1,151 @@
+ 
+:root{
+    --c1: rgb(0, 0, 0);
+    --c2: rgb(118, 118, 118);
+    --c3: rgb(255, 255, 255);
+    --c4: rgb(209, 82, 82);
+    --f1: Tahoma;
+    --f2: Arial, Helvetica, sans-serif;
+    --f3: Verdana, Geneva, sans-serif;
+    --f4: "Silkscreen", sans-serif;
+}
+/*Letra*/
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+body{
+  background-image: url(../img/fondo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:inherit;
+  background-attachment: fixed;
+  min-height: 10rem;
+}*/
+header {
+  background-image: url(../img/head.jpg);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Titulo*/
+.TITULO{
+    background-color: var(--c1);
+    padding: 1%;
+    position: sticky;
+    top: 0;
+}
+.Titu{
+    display: flex;
+    flex-direction: row;
+    text-align:start;
+    padding: 1%;
+}
+
+.Titu a{
+    color: var(--c3);
+    padding: 1%;
+    background-color: #000000a1;
+    border-radius: 1rem 0 1rem 0;
+    align-items: flex-start;
+    font-family: var(--f4) ;
+    font-size: 2rem;
+    cursor:pointer;
+}
+/*Menu*/
+.menu {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+}
+.juegos a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: var(--c4);
+    color: var(--c3);
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    font-family: var(--f1);
+}
+.juegos a:hover{
+    animation:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 1s ease-out;
+    background-color: var(--c1);
+    color: var(--c3);
+}
+.juegos {
+    background-image: url(../img/men.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    margin: 1rem 1rem;
+    box-shadow: 2px 2px 5px #000000;
+    align-items: center;
+}
+.juegos p{
+    text-align: center;
+    font-family: var(--f2);
+    font-size: 1rem;
+    opacity: 1%;
+}
+.juegos p:hover{
+    opacity: 100%;
+}
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  background-image: url(../img/late.jpg);
+  padding-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.sidebar ul li {
+  padding: 15px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  font-family: var(--f3);
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+}
+.sidebar img{
+  width: 3rem;
+  cursor:pointer;
+  margin-left: 13rem;
+  background-color: #00000000;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+}
+  
